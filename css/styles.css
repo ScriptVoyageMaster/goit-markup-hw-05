@@ -730,12 +730,15 @@ label {
   position: relative;
 }
 .contact-input {
-  outline: none;
+  /* outline: none; */
   width: 100%;
+  height: 40px;
   padding: 11px 11px 11px 38px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 .contact-input:focus,
 .contact-textarea:focus {
@@ -748,15 +751,15 @@ label {
   fill: var(--navyblue);
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateX(16px) translateY(-50%);
-  transition: fiil 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-coment-container {
   margin-bottom: 16px;
 }
 .contact-textarea {
-  outline: none;
+  /* outline: none; */
   resize: none;
   width: 100%;
   min-height: 120px;
@@ -764,6 +767,13 @@ label {
   border: 1px solid var(--navyblue-modal);
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+  color: var(--navyblue-modal);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
 }
 .contact-textarea::placeholder {
   color: var(--navyblue-modal);
@@ -824,13 +834,17 @@ label {
   padding: 16px 32px;
   color: var(--white);
   text-align: center;
-
-  /* Button Text */
-
   font-size: 16px;
-
   font-weight: 500;
-  line-height: 1.5px; /* 150% */
+  line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.contact-submit-btn:hover,
+.contact-submit-btn:focus {
+  background-color: var(--ocean);
 }
