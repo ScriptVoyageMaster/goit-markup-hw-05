@@ -360,15 +360,16 @@
           <p class="subscribe-text">Subscribe</p>
 
           <form class="subscribe-form">
-            <label><input type="email" placeholder="E-mail" class="subscribe-input" /></label>
-            <div class="subscribe-button-container">
-              <button type="submit" class="subscribe-button">
-                Subscribe
-                <svg width="24" height="24" class="subscribe-button-icon">
-                  <use href="./images/icons.svg#icon-plane"></use>
-                </svg>
-              </button>
-            </div>
+            <label class="subscribe-form-desck"
+              ><input type="email" placeholder="E-mail" class="subscribe-input" name="subscribe-email"
+            /></label>
+
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg width="24" height="24" class="subscribe-button-icon">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -425,17 +426,17 @@
               name="user-privacy"
               id="user-privacy"
               class="contact-checkbox-input visually-hidden"
+              value="true"
             />
             <label class="contact-checkbox" for="user-privacy"
               >I accept the terms and conditions of the
               <span class="contact-checkbox-span">
-                <svg class="contact-checkbox-icon" width="10" height="10">
+                <svg class="contact-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#checkbox"></use>
                 </svg>
               </span>
-              <span class="contact-checkbox-text">
-                <a href="" class="contact-policy-link">Privacy Policy</a>
-              </span>
+
+              <a href="" class="contact-policy-link">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="contact-submit-btn">Send</button>
